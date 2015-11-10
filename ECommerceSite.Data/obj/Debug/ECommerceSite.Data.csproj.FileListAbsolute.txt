@@ -1,0 +1,16 @@
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\ECommerceSite.Data.dll.config
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\ECommerceSite.Data.dll
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\ECommerceSite.Data.pdb
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\ECommerceSite.Models.dll
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\EntityFramework.dll
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\ECommerceSite.Models.pdb
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\EntityFramework.xml
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\obj\Debug\ECommerceSite.Data.csprojResolveAssemblyReference.cache
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\obj\Debug\ECommerceSite.Data.dll
+D:\TryzensTaskNevena\ECommerceSite\ECommerceSite.Data\obj\Debug\ECommerceSite.Data.pdb

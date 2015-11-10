@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Products", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <div class="show-basket">
+                    <a id="basketBtn" class="btn btn-info" href="#"
+                       onclick="@(User.Identity.IsAuthenticated ? "toggleBasketDB()" : "toggleBasketLS()")">
+                        Basket
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div id="basket-wrap" class="jumbotron">
+            <div id="basket"></div>
+            <a id="confirmOrderBtn" class="btn btn-primary btn-lg" href="#"
+               onclick="@(User.Identity.IsAuthenticated ? "confirmOrderDB()" : "confirmOrderLS()")">
+                Confirm Order »
+            </a>
+        </div>
+        <div id="success"></div>
+        <div id="error"></div>
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - E-Commerce Website</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/web-store-object")
+    @Scripts.Render("~/bundles/main")
+    <script>
+        @if (TempData["Clear"] == "Yes")
+        {
+            <text>localStorage.clear();</text>
+        }
+
+        function removeItem(id) {
+            var isAuthenticated = @(User.Identity.IsAuthenticated == true ? "true" : "false");
+            if (isAuthenticated) {
+                removeFromDB(id);
+            }else {
+                removeFromLS(id);
+            }
+        }
+
+    </script>
+</body>
+</html>
